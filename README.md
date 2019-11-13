@@ -52,4 +52,4 @@ K-Mean.
 
 
 
-<h4>for result and models output please chack result.pdf file</h4>
+<h4>for result and analytical model output please chack result.pdf file</h4>
