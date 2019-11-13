@@ -1,0 +1,124 @@
+utils:::menuInstallLocal()
+library()
+local({pkg <- select.list(sort(.packages(all.available = TRUE)),graphics=TRUE)
+if(nchar(pkg)) library(pkg, character.only=TRUE)})
+utils:::menuInstallPkgs()
+utils:::menuInstallLocal()
+library()
+library(prob)
+tosscoin(2)
+S <- rolldie(2, makespace = TRUE)
+S <- addrv(S, FUN = max, invars = c("X1", "X2"), name = "U")
+S <- addrv(S, FUN = sum, invars = c("X1", "X2"), name = "V")
+head(S)
+ls
+q()
+install.packages("rattle")
+library(rattle)
+library(RGtk2)
+q()
+install.packages("rattle")
+library(rattle)
+install.packages("caret")
+install.packages("factoextra")
+setwd("~/Desktop/Files/BCA_DA/project code/OVERALL")
+importing rain fall data
+data = read.csv("crops.csv" ,header = TRUE )
+new<- subset(data, data$State_Name=='Odisha')
+new1 <- new[new$Crop_Year == 2008, ]
+df2 <- subset(new1, select = c('Area', 'Production'))
+data = read.csv("crops.csv" ,header = TRUE )
+new<- subset(data, data$State_Name=='Odisha')
+new1 <- new[new$Crop_Year == 2008, ]
+df2 <- subset(new1, select = c('Area', 'Production'))
+pam.res <- pam(df2, 3)
+print(pam.res)
+df2 <- subset(new1, select = c('Area', 'Production'))
+pam.res <- pam(df2, 3)
+library(cluster)
+pam.res <- pam(df2, 3)
+print(pam.res)
+library(cluster)
+clusplot(df2,
+y_kmeans,
+lines = 0,
+shade = TRUE,
+color = TRUE,
+labels = 2,
+plotchar = FALSE,
+span = TRUE,
+main = paste('Districts having same rain fall'),
+xlab = 'Rainfall(in mm)',
+ylab = 'District name')
+y_kmeans = pam.res$cluster
+library(cluster)
+clusplot(df2,
+y_kmeans,
+lines = 0,
+shade = TRUE,
+color = TRUE,
+labels = 2,
+plotchar = FALSE,
+span = TRUE,
+main = paste('Districts having same rain fall'),
+xlab = 'Rainfall(in mm)',
+ylab = 'District name')
+print(pam.res)
+View(data)
+View(data)
+View(df2)
+setwd("~/Desktop/Files/BCA_DA/project code/r/rh")
+dataset = read.csv('2001.csv'
+sapply(dataset, function(dataset) sum(is.na(dataset)))
+sapply(dataset, function(dataset) sum(is.na(dataset)))
+dataset = read.csv('2001.csv')
+sapply(dataset, function(dataset) sum(is.na(dataset)))
+#jan
+dataset$Jan = ifelse(is.na(dataset$Jan),
+ave(dataset$Jan, FUN = function(x) mean(x, na.rm = TRUE)),
+dataset$Jan)
+#feb
+dataset$Feb = ifelse(is.na(dataset$Feb),
+ave(dataset$Feb, FUN = function(x) mean(x, na.rm = TRUE)),
+dataset$Feb)
+#march
+dataset$Mar = ifelse(is.na(dataset$Mar),
+ave(dataset$Mar, FUN = function(x) mean(x, na.rm = TRUE)),
+dataset$Mar)
+#April
+dataset$Apr = ifelse(is.na(dataset$Apr),
+ave(dataset$Apr, FUN = function(x) mean(x, na.rm = TRUE)),
+dataset$Apr)
+#May
+dataset$May = ifelse(is.na(dataset$May),
+ave(dataset$May, FUN = function(x) mean(x, na.rm = TRUE)),
+dataset$May)
+#June
+dataset$Jun = ifelse(is.na(dataset$Jun),
+ave(dataset$Jun, FUN = function(x) mean(x, na.rm = TRUE)),
+dataset$Jun)
+#July
+dataset$Jul = ifelse(is.na(dataset$Jul),
+ave(dataset$Jul, FUN = function(x) mean(x, na.rm = TRUE)),
+dataset$Jul)
+#August
+dataset$Aug = ifelse(is.na(dataset$Aug),
+ave(dataset$Aug, FUN = function(x) mean(x, na.rm = TRUE)),
+dataset$Aug)
+#September
+dataset$Sep = ifelse(is.na(dataset$Sep),
+ave(dataset$Sep, FUN = function(x) mean(x, na.rm = TRUE)),
+dataset$Sep)
+#October
+dataset$Oct = ifelse(is.na(dataset$Oct),
+ave(dataset$Oct, FUN = function(x) mean(x, na.rm = TRUE)),
+dataset$Oct)
+#November
+dataset$Nov = ifelse(is.na(dataset$Nov),
+ave(dataset$Nov, FUN = function(x) mean(x, na.rm = TRUE)),
+dataset$Nov)
+#December
+dataset$Dec = ifelse(is.na(dataset$Dec),
+ave(dataset$Dec, FUN = function(x) mean(x, na.rm = TRUE)),
+dataset$Dec)
+sapply(dataset, function(dataset) sum(is.na(dataset)))

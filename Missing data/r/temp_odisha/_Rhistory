@@ -1,0 +1,113 @@
+utils:::menuInstallLocal()
+library()
+local({pkg <- select.list(sort(.packages(all.available = TRUE)),graphics=TRUE)
+if(nchar(pkg)) library(pkg, character.only=TRUE)})
+utils:::menuInstallPkgs()
+utils:::menuInstallLocal()
+library()
+library(prob)
+tosscoin(2)
+S <- rolldie(2, makespace = TRUE)
+S <- addrv(S, FUN = max, invars = c("X1", "X2"), name = "U")
+S <- addrv(S, FUN = sum, invars = c("X1", "X2"), name = "V")
+head(S)
+ls
+q()
+install.packages("rattle")
+library(rattle)
+library(RGtk2)
+q()
+install.packages("rattle")
+library(rattle)
+setwd("~/Desktop/Files/BCA_DA/project code/r/temp_odisha")
+dataset = read.csv('2012.csv')
+sapply(dataset, function(dataset) sum(is.na(dataset)))
+dataset = read.csv('2012.csv')
+View(dataset)
+View(dataset)
+sapply(dataset, function(dataset) sum(is.na(dataset)))
+#jan
+dataset$Jan.Max. = ifelse(is.na(dataset$Jan.Max.),
+ave(dataset$Jan.Max., FUN = function(x) mean(x, na.rm = TRUE)),
+dataset$Jan.Max.)
+dataset$Jan.Min. = ifelse(is.na(dataset$Jan.Min.),
+ave(dataset$Jan.Min., FUN = function(x) mean(x, na.rm = TRUE)),
+dataset$Jan.Min.)
+#feb
+dataset$Feb.Max. = ifelse(is.na(dataset$Feb.Max.),
+ave(dataset$Feb.Max., FUN = function(x) mean(x, na.rm = TRUE)),
+dataset$Feb.Max.)
+dataset$Feb.Min. = ifelse(is.na(dataset$Feb.Min.),
+ave(dataset$Feb.Min., FUN = function(x) mean(x, na.rm = TRUE)),
+dataset$Feb.Min.)
+#march
+dataset$Mar.Max. = ifelse(is.na(dataset$Mar.Max.),
+ave(dataset$Mar.Max., FUN = function(x) mean(x, na.rm = TRUE)),
+dataset$Mar.Max.)
+dataset$Mar.Min. = ifelse(is.na(dataset$Mar.Min.),
+ave(dataset$Mar.Min., FUN = function(x) mean(x, na.rm = TRUE)),
+dataset$Mar.Min.)
+#April
+dataset$Apr.Max. = ifelse(is.na(dataset$Apr.Max.),
+ave(dataset$Apr.Max., FUN = function(x) mean(x, na.rm = TRUE)),
+dataset$Apr.Max.)
+dataset$Apr.Min. = ifelse(is.na(dataset$Apr.Min.),
+ave(dataset$Apr.Min., FUN = function(x) mean(x, na.rm = TRUE)),
+dataset$Apr.Min.)
+#May
+dataset$May.Max. = ifelse(is.na(dataset$May.Max.),
+ave(dataset$May.Max., FUN = function(x) mean(x, na.rm = TRUE)),
+dataset$May.Max.)
+dataset$May.Min. = ifelse(is.na(dataset$May.Min.),
+ave(dataset$May.Min., FUN = function(x) mean(x, na.rm = TRUE)),
+dataset$May.Min.)
+#June
+dataset$Jun.Max. = ifelse(is.na(dataset$Jun.Max.),
+ave(dataset$Jun.Max., FUN = function(x) mean(x, na.rm = TRUE)),
+dataset$Jun.Max.)
+dataset$Jun.Min. = ifelse(is.na(dataset$Jun.Min.),
+ave(dataset$Jun.Min., FUN = function(x) mean(x, na.rm = TRUE)),
+dataset$Jun.Min.)
+#July
+dataset$Jul.Max. = ifelse(is.na(dataset$Jul.Max.),
+ave(dataset$Jul.Max., FUN = function(x) mean(x, na.rm = TRUE)),
+dataset$Jul.Max.)
+dataset$Jul.Min. = ifelse(is.na(dataset$Jul.Min.),
+ave(dataset$Jul.Min., FUN = function(x) mean(x, na.rm = TRUE)),
+dataset$Jul.Min.)
+#August
+dataset$Aug.Max. = ifelse(is.na(dataset$Aug.Max.),
+ave(dataset$Aug.Max., FUN = function(x) mean(x, na.rm = TRUE)),
+dataset$Aug.Max.)
+dataset$Aug.Min. = ifelse(is.na(dataset$Aug.Min.),
+ave(dataset$Aug.Min., FUN = function(x) mean(x, na.rm = TRUE)),
+dataset$Aug.Min.)
+#September
+dataset$Sep.Max. = ifelse(is.na(dataset$Sep.Max.),
+ave(dataset$Sep.Max., FUN = function(x) mean(x, na.rm = TRUE)),
+dataset$Sep.Max.)
+dataset$Sep.Min. = ifelse(is.na(dataset$Sep.Min.),
+ave(dataset$Sep.Min., FUN = function(x) mean(x, na.rm = TRUE)),
+dataset$Sep.Min.)
+#October
+dataset$Oct.Max. = ifelse(is.na(dataset$Oct.Max.),
+ave(dataset$Oct.Max., FUN = function(x) mean(x, na.rm = TRUE)),
+dataset$Oct.Max.)
+dataset$Oct.Min. = ifelse(is.na(dataset$Oct.Min.),
+ave(dataset$Oct.Min., FUN = function(x) mean(x, na.rm = TRUE)),
+dataset$Oct.Min.)
+#November
+dataset$Nov.Max. = ifelse(is.na(dataset$Nov.Max.),
+ave(dataset$Nov.Max., FUN = function(x) mean(x, na.rm = TRUE)),
+dataset$Nov.Max.)
+dataset$Nov.Min. = ifelse(is.na(dataset$Nov.Min.),
+ave(dataset$Jan.Min., FUN = function(x) mean(x, na.rm = TRUE)),
+dataset$Nov.Min.)
+#December
+dataset$Dec.Max. = ifelse(is.na(dataset$Dec.Max.),
+ave(dataset$Dec.Max., FUN = function(x) mean(x, na.rm = TRUE)),
+dataset$Dec.Max.)
+dataset$Dec.Min. = ifelse(is.na(dataset$Dec.Min.),
+ave(dataset$Dec.Min., FUN = function(x) mean(x, na.rm = TRUE)),
+dataset$Dec.Min.)
+sapply(dataset, function(dataset) sum(is.na(dataset)))
